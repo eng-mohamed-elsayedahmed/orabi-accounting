@@ -8,12 +8,26 @@ Usage:  python build-preview.py [path/to/fonts-inline.css]
 Output: preview.html
 """
 
+import base64
 import os
 import re
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 IDS = ["top", "companies", "individuals", "about", "media", "faq", "contact"]
+
+
+def inline_images(body):
+    """The preview cannot reach the filesystem, so every image travels with it."""
+    def repl(m):
+        name = m.group(1)
+        path = os.path.join(HERE, "assets", "media", name)
+        if not os.path.exists(path):
+            return m.group(0)
+        with open(path, "rb") as f:
+            data = base64.b64encode(f.read()).decode()
+        return 'src="data:image/jpeg;base64,%s"' % data
+    return re.sub(r'src="(?:\.\./)?assets/media/([\w.-]+)"', repl, body)
 
 
 def read(*parts):
@@ -48,8 +62,8 @@ def main():
 
     css = read("assets", "style.css")
     js = read("assets", "app.js")
-    ar = body_of(read("index.html"))
-    en = namespace_en(body_of(read("en", "index.html")))
+    ar = inline_images(body_of(read("index.html")))
+    en = inline_images(namespace_en(body_of(read("en", "index.html"))))
 
     # the language links become in-page toggles
     ar = ar.replace('href="en/"', 'href="#" data-lang="en"')

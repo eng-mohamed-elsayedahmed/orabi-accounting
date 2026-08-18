@@ -334,11 +334,11 @@ ul{margin:0;padding:0;list-style:none}
 /* ---------- about ---------- */
 .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(1.8rem,4vw,3.5rem);align-items:center}
 .portrait{
-  position:relative;aspect-ratio:4/5;border-radius:var(--radius-lg);overflow:hidden;
+  position:relative;aspect-ratio:1/1;border-radius:var(--radius-lg);overflow:hidden;
   background:linear-gradient(160deg,var(--hero-2),var(--hero));
   border:1px solid var(--line);display:grid;place-items:center;box-shadow:var(--shadow-lift);
 }
-.portrait-mono{font-family:var(--display);font-size:clamp(4rem,11vw,7rem);color:var(--gold);opacity:.3;line-height:1}
+.portrait img{inline-size:100%;block-size:100%;object-fit:cover;display:block}
 .portrait-cap{
   position:absolute;inset-block-end:0;inset-inline:0;padding:1rem 1.2rem;
   background:linear-gradient(0deg,rgba(0,0,0,.75),transparent);
@@ -359,13 +359,21 @@ ul{margin:0;padding:0;list-style:none}
 .media .lede{color:var(--on-dark-2)}
 .mgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:1rem;margin-block-start:2.6rem}
 .mcard{
-  display:flex;flex-direction:column;gap:.5rem;text-decoration:none;color:inherit;
+  display:flex;flex-direction:column;text-decoration:none;color:inherit;
   background:color-mix(in srgb,#fff 5%, transparent);
   border:1px solid color-mix(in srgb,var(--gold) 20%, transparent);
-  border-radius:var(--radius);padding:1.25rem 1.3rem;
+  border-radius:var(--radius);overflow:hidden;
   transition:background .25s, transform .25s var(--ease), border-color .25s;
 }
 .mcard:hover{background:color-mix(in srgb,#fff 10%, transparent);transform:translateY(-3px);border-color:color-mix(in srgb,var(--gold) 55%, transparent)}
+.mcard-thumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--hero-2);flex:none}
+.mcard-thumb img{inline-size:100%;block-size:100%;object-fit:cover;display:block;transition:transform .55s var(--ease)}
+.mcard-thumb::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(0deg,color-mix(in srgb,var(--hero) 72%, transparent),transparent 55%);
+}
+.mcard:hover .mcard-thumb img{transform:scale(1.06)}
+.mcard-body{display:flex;flex-direction:column;gap:.5rem;padding:1.15rem 1.25rem 1.3rem;flex:1}
 .mcard-top{display:flex;align-items:center;justify-content:space-between;gap:.6rem}
 .mcard-ch{font-size:.78rem;font-weight:600;color:var(--gold-2)}
 .mcard-dt{font-size:.74rem;color:var(--on-dark-2)}
