@@ -29,7 +29,7 @@ python build-preview.py
 
 ## قبل الرفع
 
-1. غيّر `orabi-accounting.com` للدومين الحقيقي في: `index.html`، `en/index.html`، `sitemap.xml`، `robots.txt`.
+1. غيّر `eng-mohamed-elsayedahmed.github.io/orabi-accounting` للدومين الحقيقي في: `index.html`، `en/index.html`، `sitemap.xml`، `robots.txt`.
 2. حط صورة `assets/tamer-orabi.jpg` وفعّل وسم `<img>` المعلّق في قسم `#about` في الصفحتين.
 3. لو فيه لوجو حقيقي للمكتب، بدّل الـ `.brand-mark` SVG في الهيدر.
 4. فعّل سطور القيد والمعهد المعلّقة في `.creds` بعد التأكد من البيانات.
