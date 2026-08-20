@@ -292,13 +292,13 @@ ul{margin:0;padding:0;list-style:none}
   content:"";position:absolute;inset-inline-start:0;inset-block-start:.62em;
   inline-size:5px;block-size:5px;border-radius:1px;background:var(--gold);
 }
-.card-wa{
+.card-link{
   margin-block-start:1.15rem;display:inline-flex;align-items:center;gap:.45rem;
   font-size:.88rem;font-weight:600;color:var(--ink);text-decoration:none;
   border-block-end:1px solid var(--gold);padding-block-end:.15rem;align-self:flex-start;
   transition:color .2s,gap .2s;
 }
-.card-wa:hover{color:var(--gold);gap:.7rem}
+.card-link:hover{color:var(--gold);gap:.7rem}
 
 /* ---------- individuals ---------- */
 .ind{background:var(--surface-2);border-block:1px solid var(--line-soft)}
