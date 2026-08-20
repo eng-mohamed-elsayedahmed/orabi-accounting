@@ -127,17 +127,18 @@ ul{margin:0;padding:0;list-style:none}
   --hd-fg:var(--ink);
 }
 .hdr-in{display:flex;align-items:center;gap:1.4rem;block-size:68px}
-.brand{display:flex;align-items:center;gap:.65rem;text-decoration:none;color:var(--hd-fg);flex:none;transition:color .35s var(--ease)}
+.brand{display:flex;align-items:center;gap:.75rem;text-decoration:none;color:var(--hd-fg);flex:none;transition:color .35s var(--ease)}
 .brand-logo-shell{
-  display:grid;place-items:center;inline-size:116px;block-size:42px;flex:none;
-  padding:0;background:transparent;border:0;border-radius:0;
+  display:grid;place-items:center;inline-size:46px;block-size:46px;flex:none;
+  padding:.22rem;background:#fff;border:1px solid rgba(255,255,255,.72);border-radius:10px;
+  box-shadow:0 5px 16px rgba(0,0,0,.16);
 }
 .brand-logo-shell picture{display:block;inline-size:100%;block-size:100%}
 .brand-logo{display:block;inline-size:100%;block-size:100%;object-fit:contain}
-.hdr:not(.is-stuck):not(.is-open) .brand-logo{filter:drop-shadow(0 2px 4px rgba(0,0,0,.3)) brightness(0) invert(1)}
-.brand-txt{display:flex;flex-direction:column;line-height:1.15}
-.brand-name{font-family:var(--display);font-weight:700;font-size:1.12rem}
-.brand-sub{font-size:.66rem;letter-spacing:.06em;opacity:.7;font-weight:500}
+.hdr.is-stuck .brand-logo-shell{border-color:var(--line);box-shadow:0 3px 12px rgba(10,38,32,.12)}
+.brand-txt{display:flex;flex-direction:column;line-height:1.15;min-inline-size:0}
+.brand-name{font-family:var(--display);font-weight:700;font-size:1.12rem;line-height:1.1;white-space:nowrap}
+.brand-sub{font-size:.66rem;letter-spacing:.06em;opacity:.78;font-weight:500;white-space:nowrap}
 
 .nav{display:flex;gap:.25rem;margin-inline-start:auto}
 .nav a{
@@ -481,8 +482,9 @@ a.c-v:hover{color:var(--gold)}
   .trust-item:nth-child(3),.trust-item:nth-child(4){border-block-start:1px solid var(--line-soft)}
 }
 @media (max-width:760px){
-  .brand-logo-shell{inline-size:98px;block-size:36px}
-  .brand-txt{display:none}
+  .brand-logo-shell{inline-size:40px;block-size:40px;border-radius:9px}
+  .brand-name{font-size:.98rem}
+  .brand-sub{display:none}
   .menu-btn{display:block;margin-inline-start:auto}
   .hdr-act .btn{display:none}
   .nav{
