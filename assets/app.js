@@ -2,6 +2,21 @@
   var each = function (list, fn) { Array.prototype.forEach.call(list, fn); };
   var headers = document.querySelectorAll('.hdr');
 
+  /* external actions: keep the site open and encode prefilled WhatsApp text safely */
+  each(document.querySelectorAll('a[href^="https://wa.me/"], a.mcard[href^="http"]'), function (a) {
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+  });
+  each(document.querySelectorAll('a[href^="https://wa.me/"]'), function (a) {
+    try {
+      var url = new URL(a.getAttribute('href'), window.location.href);
+      if (url.searchParams.has('text')) {
+        url.searchParams.set('text', url.searchParams.get('text'));
+        a.href = url.toString();
+      }
+    } catch (err) {}
+  });
+
   /* header: solid once the hero starts scrolling away */
   function onScroll() {
     var stuck = window.scrollY > 12;

@@ -371,18 +371,28 @@ ul{margin:0;padding:0;list-style:none}
   transition:background .25s, transform .25s var(--ease), border-color .25s;
 }
 .mcard:hover{background:color-mix(in srgb,#fff 10%, transparent);transform:translateY(-3px);border-color:color-mix(in srgb,var(--gold) 55%, transparent)}
+.mcard:focus-visible{transform:translateY(-3px);border-color:var(--gold);box-shadow:0 0 0 3px color-mix(in srgb,var(--gold) 28%,transparent)}
 .mcard-thumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--hero-2);flex:none}
 .mcard-thumb img{inline-size:100%;block-size:100%;object-fit:cover;display:block;transition:transform .55s var(--ease)}
+.mcard-thumb::before{
+  content:"▶";position:absolute;inset-inline-start:1rem;inset-block-end:1rem;z-index:2;
+  display:grid;place-items:center;inline-size:2.8rem;block-size:2.8rem;padding-inline-start:.12rem;
+  border:1px solid color-mix(in srgb,#fff 70%,transparent);border-radius:50%;
+  background:color-mix(in srgb,var(--hero) 76%,transparent);color:var(--gold-2);
+  font-size:.9rem;line-height:1;box-shadow:0 8px 20px rgba(0,0,0,.28);
+  transition:transform .25s var(--ease),background .2s;
+}
 .mcard-thumb::after{
   content:"";position:absolute;inset:0;pointer-events:none;
-  background:linear-gradient(0deg,color-mix(in srgb,var(--hero) 72%, transparent),transparent 55%);
+  z-index:1;background:linear-gradient(0deg,color-mix(in srgb,var(--hero) 72%, transparent),transparent 55%);
 }
 .mcard:hover .mcard-thumb img{transform:scale(1.06)}
+.mcard:hover .mcard-thumb::before{transform:scale(1.08);background:color-mix(in srgb,var(--brand) 82%,transparent)}
 .mcard-body{display:flex;flex-direction:column;gap:.5rem;padding:1.15rem 1.25rem 1.3rem;flex:1}
 .mcard-top{display:flex;align-items:center;justify-content:space-between;gap:.6rem}
 .mcard-ch{font-size:.78rem;font-weight:600;color:var(--gold-2)}
 .mcard-dt{font-size:.74rem;color:var(--on-dark-2)}
-.mcard h3{font-size:1.06rem;line-height:1.5;color:var(--on-dark)}
+.mcard h3{font-size:1.06rem;line-height:1.5;color:var(--on-dark);min-block-size:3em}
 .mcard-pg{font-size:.82rem;color:var(--on-dark-2)}
 .mcard-play{
   margin-block-start:.35rem;font-size:.82rem;color:var(--gold);
