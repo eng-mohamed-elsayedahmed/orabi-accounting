@@ -128,7 +128,12 @@ ul{margin:0;padding:0;list-style:none}
 }
 .hdr-in{display:flex;align-items:center;gap:1.4rem;block-size:68px}
 .brand{display:flex;align-items:center;gap:.65rem;text-decoration:none;color:var(--hd-fg);flex:none;transition:color .35s var(--ease)}
-.brand-mark{inline-size:34px;block-size:34px;flex:none}
+.brand-logo-shell{
+  display:grid;place-items:center;inline-size:116px;block-size:42px;flex:none;
+  padding:.22rem .42rem;background:#fff;border:1px solid rgba(255,255,255,.65);
+  border-radius:7px;box-shadow:0 6px 18px rgba(0,0,0,.16);
+}
+.brand-logo{display:block;inline-size:100%;block-size:100%;object-fit:contain}
 .brand-txt{display:flex;flex-direction:column;line-height:1.15}
 .brand-name{font-family:var(--display);font-weight:700;font-size:1.12rem}
 .brand-sub{font-size:.66rem;letter-spacing:.06em;opacity:.7;font-weight:500}
@@ -383,6 +388,7 @@ ul{margin:0;padding:0;list-style:none}
   margin-block-start:.35rem;font-size:.82rem;color:var(--gold);
   display:inline-flex;align-items:center;gap:.4rem;font-weight:600;
 }
+.mcard-play::after{content:"↗";font-size:1rem;line-height:1}
 .media-more{margin-block-start:2rem;text-align:center;font-size:.9rem;color:var(--on-dark-2)}
 
 /* ---------- faq ---------- */
@@ -463,6 +469,8 @@ a.c-v:hover{color:var(--gold)}
   .trust-item:nth-child(3),.trust-item:nth-child(4){border-block-start:1px solid var(--line-soft)}
 }
 @media (max-width:760px){
+  .brand-logo-shell{inline-size:98px;block-size:36px}
+  .brand-txt{display:none}
   .menu-btn{display:block;margin-inline-start:auto}
   .hdr-act .btn{display:none}
   .nav{
