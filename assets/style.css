@@ -130,12 +130,10 @@ ul{margin:0;padding:0;list-style:none}
 .brand{display:flex;align-items:center;gap:.75rem;text-decoration:none;color:var(--hd-fg);flex:none;transition:color .35s var(--ease)}
 .brand-logo-shell{
   display:grid;place-items:center;inline-size:46px;block-size:46px;flex:none;
-  padding:.22rem;background:#fff;border:1px solid rgba(255,255,255,.72);border-radius:10px;
-  box-shadow:0 5px 16px rgba(0,0,0,.16);
+  padding:.18rem;background:transparent;border:0;border-radius:10px;
 }
 .brand-logo-shell picture{display:block;inline-size:100%;block-size:100%}
-.brand-logo{display:block;inline-size:100%;block-size:100%;object-fit:contain}
-.hdr.is-stuck .brand-logo-shell{border-color:var(--line);box-shadow:0 3px 12px rgba(10,38,32,.12)}
+.brand-logo{display:block;inline-size:100%;block-size:100%;object-fit:contain;filter:drop-shadow(0 2px 4px rgba(0,0,0,.22))}
 .brand-txt{display:flex;flex-direction:column;line-height:1.15;min-inline-size:0}
 .brand-name{font-family:var(--display);font-weight:700;font-size:1.12rem;line-height:1.1;white-space:nowrap}
 .brand-sub{font-size:.66rem;letter-spacing:.06em;opacity:.78;font-weight:500;white-space:nowrap}
