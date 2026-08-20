@@ -41,12 +41,6 @@
     });
   });
 
-  /* seal: give every ring its own circumference so it can ink itself in */
-  each(document.querySelectorAll('.seal .ring'), function (c) {
-    var r = parseFloat(c.getAttribute('r')) || 0;
-    c.style.setProperty('--len', (2 * Math.PI * r).toFixed(1));
-  });
-
   /* scroll reveal */
   var els = document.querySelectorAll('.reveal');
   if (!('IntersectionObserver' in window)) {

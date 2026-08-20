@@ -1,29 +1,29 @@
 /* =========================================================
    مجموعة عرابي المحاسبية — Orabi Accounting Group
    Identity: Egyptian revenue-stamp palette + Amiri (Bulaq press)
-   Signature: the chartered accountant seal
+   Signature: eagle and globe brand mark
    ========================================================= */
 
 /* ---------- tokens: light ---------- */
 :root{
-  --paper:#EDF1EE;
+  --paper:#F2F6FB;
   --surface:#FFFFFF;
-  --surface-2:#F6F9F6;
-  --ink:#0A2620;
-  --ink-2:#4B635C;
-  --line:#CFDCD6;
-  --line-soft:#E1EAE5;
-  --brand:#0F5C4E;
-  --brand-2:#147A66;
-  --hero:#07302A;
-  --hero-2:#0B443A;
+  --surface-2:#F7F9FC;
+  --ink:#102C55;
+  --ink-2:#526783;
+  --line:#D5E0EC;
+  --line-soft:#E7EEF6;
+  --brand:#1658A6;
+  --brand-2:#0D4385;
+  --hero:#071F46;
+  --hero-2:#0E4B92;
   --accent:#8E2233;
-  --gold:#B08339;
-  --gold-2:#D9B778;
-  --on-dark:#E7F1EC;
-  --on-dark-2:#9DBAB0;
-  --shadow:0 1px 2px rgba(10,38,32,.05), 0 12px 32px -18px rgba(10,38,32,.35);
-  --shadow-lift:0 2px 6px rgba(10,38,32,.07), 0 26px 50px -24px rgba(10,38,32,.45);
+  --gold:#B8872D;
+  --gold-2:#D8B45A;
+  --on-dark:#F0F5FC;
+  --on-dark-2:#AFC2D9;
+  --shadow:0 1px 2px rgba(16,44,85,.05), 0 12px 32px -18px rgba(16,44,85,.28);
+  --shadow-lift:0 2px 6px rgba(16,44,85,.07), 0 26px 50px -24px rgba(16,44,85,.38);
   --radius:14px;
   --radius-lg:22px;
   --display:"Amiri","Times New Roman",serif;
@@ -36,43 +36,43 @@
 /* ---------- tokens: dark ---------- */
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --paper:#06120F;
-    --surface:#0B1D18;
-    --surface-2:#0E241E;
-    --ink:#E3EEE9;
-    --ink-2:#93AAA2;
-    --line:#1D3A32;
-    --line-soft:#152C25;
-    --brand:#2E9781;
-    --brand-2:#3FB79C;
-    --hero:#04100D;
-    --hero-2:#08221C;
+    --paper:#071326;
+    --surface:#0C1F3A;
+    --surface-2:#102A4B;
+    --ink:#E8F0FB;
+    --ink-2:#A8BBD0;
+    --line:#1F3858;
+    --line-soft:#162E4B;
+    --brand:#4F8DD8;
+    --brand-2:#76AAEA;
+    --hero:#041126;
+    --hero-2:#0B3975;
     --accent:#DB6E7E;
     --gold:#D2A657;
     --gold-2:#8A6C31;
-    --on-dark:#E3EEE9;
-    --on-dark-2:#8FA9A1;
+    --on-dark:#E8F0FB;
+    --on-dark-2:#9DB2CC;
     --shadow:0 1px 2px rgba(0,0,0,.4), 0 12px 32px -18px rgba(0,0,0,.8);
     --shadow-lift:0 2px 6px rgba(0,0,0,.5), 0 26px 50px -24px rgba(0,0,0,.9);
   }
 }
 :root[data-theme="dark"]{
-  --paper:#06120F;
-  --surface:#0B1D18;
-  --surface-2:#0E241E;
-  --ink:#E3EEE9;
-  --ink-2:#93AAA2;
-  --line:#1D3A32;
-  --line-soft:#152C25;
-  --brand:#2E9781;
-  --brand-2:#3FB79C;
-  --hero:#04100D;
-  --hero-2:#08221C;
+  --paper:#071326;
+  --surface:#0C1F3A;
+  --surface-2:#102A4B;
+  --ink:#E8F0FB;
+  --ink-2:#A8BBD0;
+  --line:#1F3858;
+  --line-soft:#162E4B;
+  --brand:#4F8DD8;
+  --brand-2:#76AAEA;
+  --hero:#041126;
+  --hero-2:#0B3975;
   --accent:#DB6E7E;
   --gold:#D2A657;
   --gold-2:#8A6C31;
-  --on-dark:#E3EEE9;
-  --on-dark-2:#8FA9A1;
+  --on-dark:#E8F0FB;
+  --on-dark-2:#9DB2CC;
   --shadow:0 1px 2px rgba(0,0,0,.4), 0 12px 32px -18px rgba(0,0,0,.8);
   --shadow-lift:0 2px 6px rgba(0,0,0,.5), 0 26px 50px -24px rgba(0,0,0,.9);
 }
@@ -165,7 +165,7 @@ ul{margin:0;padding:0;list-style:none}
 .btn-gold:hover{background:var(--gold-2);box-shadow:0 16px 30px -14px rgba(176,131,57,.9)}
 .btn-ghost{border-color:color-mix(in srgb, var(--hd-fg) 35%, transparent);color:var(--hd-fg)}
 .btn-ghost:hover{background:color-mix(in srgb, var(--hd-fg) 12%, transparent)}
-.btn-brand{background:var(--brand);color:#fff;box-shadow:0 10px 24px -14px rgba(15,92,78,.9)}
+.btn-brand{background:var(--brand);color:#fff;box-shadow:0 10px 24px -14px rgba(22,88,166,.9)}
 .btn-brand:hover{background:var(--brand-2)}
 .btn-line{border-color:var(--line);color:var(--ink);background:var(--surface)}
 .btn-line:hover{border-color:var(--gold);color:var(--gold)}
@@ -210,15 +210,14 @@ ul{margin:0;padding:0;list-style:none}
 .hero-note{margin-block-start:1.5rem;font-size:.85rem;color:var(--on-dark-2);display:flex;align-items:center;gap:.5rem}
 .hero-note::before{content:"";inline-size:6px;block-size:6px;border-radius:50%;background:var(--gold);flex:none}
 
-/* seal */
-.seal-wrap{display:flex;justify-content:center;align-items:center}
-.seal{inline-size:min(360px,82vw);block-size:auto;transform:rotate(-5deg);filter:drop-shadow(0 18px 40px rgba(0,0,0,.45))}
-.seal .ring{fill:none;stroke:var(--gold)}
-.seal .ticks{fill:none;stroke:var(--gold);stroke-width:11;stroke-dasharray:1.4 8.2;opacity:.85}
-.seal text{fill:var(--gold-2);text-anchor:middle;font-family:var(--display)}
-.seal .t-lg{font-size:46px;font-weight:700;fill:var(--gold)}
-.seal .t-md{font-size:17px;letter-spacing:.06em}
-.seal .t-sm{font-size:13px;opacity:.8}
+/* hero brand mark */
+.hero-logo{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem}
+.hero-logo picture{display:block;inline-size:min(390px,82vw);aspect-ratio:1}
+.hero-logo-img{display:block;inline-size:100%;block-size:100%;object-fit:contain;filter:drop-shadow(0 18px 34px rgba(0,0,0,.4))}
+.hero-logo-caption{
+  color:var(--gold-2);font-family:var(--display);font-size:1.06rem;font-weight:700;
+  letter-spacing:.05em;text-align:center;opacity:.92
+}
 
 /* ---------- trust strip ---------- */
 .trust{background:var(--surface);border-block-end:1px solid var(--line-soft)}
@@ -450,27 +449,17 @@ a.c-v:hover{color:var(--gold)}
 .js .reveal{opacity:0;transform:translateY(20px)}
 .js .reveal.in{opacity:1;transform:none;transition:opacity .7s var(--ease), transform .7s var(--ease)}
 
-/* seal draw-in */
-.js .seal .ring{stroke-dasharray:var(--len);stroke-dashoffset:var(--len);animation:draw 1.5s var(--ease) .15s forwards}
-.js .seal .ticks{opacity:0;transform-origin:50% 50%;animation:tickin 1.2s var(--ease) .75s forwards}
-.js .seal .seal-txt{opacity:0;animation:fadeup .8s var(--ease) 1.05s forwards}
-@keyframes draw{to{stroke-dashoffset:0}}
-@keyframes tickin{from{opacity:0;transform:rotate(-24deg)}to{opacity:.85;transform:rotate(0)}}
-@keyframes fadeup{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-
 @media (prefers-reduced-motion: reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.001ms !important;animation-delay:0s !important;transition-duration:.001ms !important}
   .js .reveal{opacity:1;transform:none}
-  .js .seal .ring{stroke-dashoffset:0}
-  .js .seal .ticks,.js .seal .seal-txt{opacity:.85}
 }
 
 /* ---------- responsive ---------- */
 @media (max-width:960px){
   .hero-grid{grid-template-columns:1fr;gap:2.5rem}
-  .seal-wrap{order:-1}
-  .seal{inline-size:min(280px,64vw)}
+  .hero-logo{order:-1}
+  .hero-logo picture{inline-size:min(280px,64vw)}
   .about-grid{grid-template-columns:1fr}
   .portrait{max-inline-size:340px}
   .c-grid{grid-template-columns:1fr}
