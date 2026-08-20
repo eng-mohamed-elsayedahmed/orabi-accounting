@@ -31,7 +31,7 @@ python build-preview.py
 
 1. غيّر `eng-mohamed-elsayedahmed.github.io/orabi-accounting` للدومين الحقيقي في: `index.html`، `en/index.html`، `sitemap.xml`، `robots.txt`.
 2. حط صورة `assets/tamer-orabi.jpg` وفعّل وسم `<img>` المعلّق في قسم `#about` في الصفحتين.
-3. اللوجو المستخدم في الهيدر هو `assets/media/orabi-logo-clean.png`، وهو نسخة محسّنة من ملف العميل مع خلفية بيضاء نظيفة.
+3. اللوجو المستخدم في الهيدر هو `assets/media/orabi-logo-transparent.png` مع نسخة WebP أخف، بالإضافة إلى نسخ `orabi-logo-final.png` و`orabi-logo-final.jpg` للاستخدامات المختلفة.
 4. فعّل سطور القيد والمعهد المعلّقة في `.creds` بعد التأكد من البيانات.
 
 ## الهوية
