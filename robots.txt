@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/sitemap.xml
+Sitemap: https://orabi-group.com/sitemap.xml
