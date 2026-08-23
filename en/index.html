@@ -34,8 +34,11 @@
 <meta name="twitter:image:alt" content="Orabi Accounting Group logo">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" href="../assets/media/orabi-mark.webp" type="image/webp">
-<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="../assets/media/orabi-mark-256.webp" type="image/webp" media="(max-width: 600px)">
+<link rel="preload" as="image" href="../assets/media/orabi-mark.webp" type="image/webp" media="(min-width: 601px)">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap"></noscript>
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="stylesheet" href="../assets/style.css">
 <script>document.documentElement.classList.add('js')</script>
 <script type="application/ld+json">
@@ -117,7 +120,7 @@
 <header class="hdr">
   <div class="wrap hdr-in">
     <a class="brand" href="#top">
-      <span class="brand-logo-shell"><picture><source srcset="../assets/media/orabi-mark.webp" type="image/webp"><img class="brand-logo" src="../assets/media/orabi-mark.png" alt="Orabi Accounting Group"></picture></span>
+      <span class="brand-logo-shell"><picture><source media="(max-width: 600px)" srcset="../assets/media/orabi-mark-256.webp" type="image/webp"><source srcset="../assets/media/orabi-mark.webp" type="image/webp"><img class="brand-logo" src="../assets/media/orabi-mark.png" alt="Orabi Accounting Group" width="512" height="512" decoding="async"></picture></span>
       <span class="brand-txt">
         <span class="brand-name">Orabi Accounting</span>
         <span class="brand-sub">CHARTERED ACCOUNTANTS · TAX EXPERTS</span>
@@ -159,7 +162,7 @@
     </div>
 
     <div class="hero-logo">
-      <picture><source srcset="../assets/media/orabi-mark.webp" type="image/webp"><img class="hero-logo-img" src="../assets/media/orabi-mark.png" alt="Orabi Accounting Group logo"></picture>
+      <picture><source media="(max-width: 600px)" srcset="../assets/media/orabi-mark-256.webp" type="image/webp"><source srcset="../assets/media/orabi-mark.webp" type="image/webp"><img class="hero-logo-img" src="../assets/media/orabi-mark.png" alt="Orabi Accounting Group logo" width="512" height="512" loading="eager" fetchpriority="high" decoding="async"></picture>
       <span class="hero-logo-caption">ORABI ACCOUNTING GROUP</span>
     </div>
   </div>
@@ -403,7 +406,7 @@
 <section class="section" id="about">
   <div class="wrap about-grid">
     <div class="portrait reveal">
-      <img src="../assets/media/tamer-orabi.jpg" alt="Dr. Tamer Orabi" width="350" height="350">
+      <img src="../assets/media/tamer-orabi.jpg" alt="Dr. Tamer Orabi" width="350" height="350" loading="lazy" decoding="async">
       <span class="portrait-cap">Dr. Tamer Orabi — chartered accountant and economist</span>
     </div>
 

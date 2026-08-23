@@ -31,7 +31,10 @@
 <meta name="twitter:image" content="https://orabi-group.com/assets/media/orabi-og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/media/orabi-mark-256.webp" type="image/webp">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap"></noscript>
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="stylesheet" href="assets/style.css">
 <script>document.documentElement.classList.add('js')</script>
 <script type="application/ld+json">
@@ -79,7 +82,7 @@
 <header class="hdr">
   <div class="wrap hdr-in">
     <a class="brand" href="index.html#top">
-      <span class="brand-logo-shell"><picture><source srcset="assets/media/orabi-mark.webp" type="image/webp"><img class="brand-logo" src="assets/media/orabi-mark.png" alt="مجموعة عرابي المحاسبية"></picture></span>
+      <span class="brand-logo-shell"><picture><source media="(max-width: 600px)" srcset="assets/media/orabi-mark-256.webp" type="image/webp"><source srcset="assets/media/orabi-mark.webp" type="image/webp"><img class="brand-logo" src="assets/media/orabi-mark.png" alt="مجموعة عرابي المحاسبية" width="512" height="512" decoding="async"></picture></span>
       <span class="brand-txt"><span class="brand-name">مجموعة عرابي</span><span class="brand-sub">محاسبون قانونيون · خبراء ضرائب</span></span>
     </a>
     <nav class="nav" aria-label="التنقل الرئيسي">

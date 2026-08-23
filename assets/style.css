@@ -99,7 +99,7 @@ ul{margin:0;padding:0;list-style:none}
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
 
 .wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--pad)}
-.section{padding-block:clamp(4.25rem,8.5vw,7rem)}
+.section{padding-block:clamp(4.25rem,8.5vw,7rem);content-visibility:auto;contain-intrinsic-size:900px}
 
 /* eyebrow: small gold label with a leading rule */
 .eyebrow{
@@ -233,7 +233,7 @@ ul{margin:0;padding:0;list-style:none}
 .channels ul{display:flex;flex-wrap:wrap;gap:.75rem 1.9rem;align-items:center;justify-content:center}
 .channels li{
   font-family:var(--display);font-size:1.12rem;font-weight:700;color:var(--ink);
-  opacity:.5;transition:opacity .25s;
+  opacity:.72;transition:opacity .25s;
 }
 .channels li:hover{opacity:.95}
 
@@ -357,7 +357,7 @@ ul{margin:0;padding:0;list-style:none}
 .creds span{color:var(--ink-2)}
 
 /* ---------- media ---------- */
-.media{background:var(--hero);color:var(--on-dark)}
+.media{background:var(--hero);color:var(--on-dark);content-visibility:auto;contain-intrinsic-size:1100px}
 .media .eyebrow{color:var(--gold-2)}
 .media .h2{color:var(--on-dark)}
 .media .lede{color:var(--on-dark-2)}

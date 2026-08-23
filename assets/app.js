@@ -22,11 +22,21 @@
   });
 
   /* header: solid once the hero starts scrolling away */
+  var scrollQueued = false;
   function onScroll() {
+    if (scrollQueued) return;
+    scrollQueued = true;
+    window.requestAnimationFrame(function () {
+      var stuck = window.scrollY > 12;
+      each(headers, function (h) { h.classList.toggle('is-stuck', stuck); });
+      scrollQueued = false;
+    });
+  }
+  function setInitialHeaderState() {
     var stuck = window.scrollY > 12;
     each(headers, function (h) { h.classList.toggle('is-stuck', stuck); });
   }
-  onScroll();
+  setInitialHeaderState();
   window.addEventListener('scroll', onScroll, { passive: true });
 
   /* mobile menu */
