@@ -213,7 +213,7 @@ ul{margin:0;padding:0;list-style:none}
 /* hero brand mark */
 .hero-logo{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem}
 .hero-logo picture{display:block;inline-size:min(390px,82vw);aspect-ratio:1}
-.hero-logo-img{display:block;inline-size:100%;block-size:100%;object-fit:contain;filter:drop-shadow(0 18px 34px rgba(0,0,0,.4))}
+.hero-logo-img{display:block;inline-size:100%;block-size:100%;object-fit:contain}
 .hero-logo-caption{
   color:var(--gold-2);font-family:var(--display);font-size:1.06rem;font-weight:700;
   letter-spacing:.05em;text-align:center;opacity:.92
