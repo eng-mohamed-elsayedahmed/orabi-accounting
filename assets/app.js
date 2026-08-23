@@ -49,7 +49,9 @@
     mb.addEventListener('click', function () {
       var open = hdr.classList.toggle('is-open');
       mb.setAttribute('aria-expanded', open ? 'true' : 'false');
-      mb.setAttribute('aria-label', open ? (document.documentElement.dir === 'rtl' ? 'إغلاق قائمة التنقل' : 'Close navigation menu') : (document.documentElement.dir === 'rtl' ? 'فتح قائمة التنقل' : 'Open navigation menu'));
+      var rtl = document.documentElement.dir === 'rtl';
+      mb.setAttribute('aria-label', open ? (rtl ? 'إغلاق قائمة التنقل' : 'Close navigation menu') : (rtl ? 'فتح قائمة التنقل' : 'Open navigation menu'));
+      mb.setAttribute('data-label', open ? (rtl ? 'إغلاق' : 'Close') : (rtl ? 'القائمة' : 'Menu'));
     });
     each(hdr.querySelectorAll('.nav a'), function (a) {
       a.addEventListener('click', function () {

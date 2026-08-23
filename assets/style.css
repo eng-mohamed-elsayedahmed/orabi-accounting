@@ -512,7 +512,8 @@ a.c-v:hover{color:var(--gold)}
   .brand-logo-shell{inline-size:40px;block-size:40px;border-radius:9px}
   .brand-name{font-size:.98rem}
   .brand-sub{display:none}
-  .menu-btn{display:grid;place-items:center;inline-size:44px;block-size:44px;margin-inline-start:auto;padding:0}
+  .menu-btn{display:grid;grid-auto-flow:column;place-items:center;gap:.45rem;min-inline-size:44px;block-size:44px;margin-inline-start:auto;padding-inline:.7rem;font:inherit;font-size:.75rem;font-weight:700}
+  .menu-btn::after{content:attr(data-label);white-space:nowrap}
   .hdr-act .btn{display:none}
   .nav{
     position:absolute;inset-block-start:68px;inset-inline:0;flex-direction:column;gap:0;
