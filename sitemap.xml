@@ -12,4 +12,16 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/en/"/>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/en/privacy.html"/>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/en/privacy.html"/>
+    <priority>0.3</priority>
+  </url>
 </urlset>

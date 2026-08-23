@@ -17,6 +17,10 @@
     } catch (err) {}
   });
 
+  each(document.querySelectorAll('[data-year]'), function (e) {
+    e.textContent = String(new Date().getFullYear());
+  });
+
   /* header: solid once the hero starts scrolling away */
   function onScroll() {
     var stuck = window.scrollY > 12;

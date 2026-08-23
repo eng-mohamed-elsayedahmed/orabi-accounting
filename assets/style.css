@@ -431,6 +431,18 @@ a.c-v:hover{color:var(--gold)}
 .ftr a{color:var(--on-dark-2);text-decoration:none}
 .ftr a:hover{color:var(--gold-2)}
 .ftr-note{font-size:.78rem;opacity:.62;margin-block-start:1.4rem;max-inline-size:74ch;line-height:1.7}
+.ftr-meta{display:flex;flex-wrap:wrap;align-items:center;gap:.45rem 1rem;margin-block-start:1.2rem;padding-block-start:1rem;border-block-start:1px solid color-mix(in srgb,var(--on-dark) 14%,transparent);font-size:.78rem}
+.ftr-meta a{color:var(--gold-2);font-weight:600}
+.ftr-meta .sep{opacity:.4}
+
+/* ---------- privacy page ---------- */
+.policy{padding-block:clamp(8rem,14vw,10rem) 5rem;min-block-size:70vh}
+.policy-head{max-inline-size:72ch}
+.policy-body{max-inline-size:72ch;margin-block-start:2.5rem}
+.policy-body h2{font-size:1.2rem;color:var(--ink);margin-block:2rem .55rem}
+.policy-body h2:first-child{margin-block-start:0}
+.policy-body p{color:var(--ink-2);line-height:1.9}
+.policy-body a{color:var(--brand);font-weight:600}
 
 /* ---------- floating whatsapp ---------- */
 .fab{
