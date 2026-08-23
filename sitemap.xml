@@ -2,26 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/en/"/>
-    <priority>1.0</priority>
+    <lastmod>2026-08-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar-EG" href="https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/"/>
+    <xhtml:link rel="alternate" hreflang="en-EG" href="https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/"/>
   </url>
   <url>
     <loc>https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/en/</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/en/"/>
-    <priority>0.8</priority>
+    <lastmod>2026-08-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar-EG" href="https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/"/>
+    <xhtml:link rel="alternate" hreflang="en-EG" href="https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/"/>
   </url>
   <url>
     <loc>https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/en/privacy.html"/>
-    <priority>0.3</priority>
+    <lastmod>2026-08-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar-EG" href="https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en-EG" href="https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/privacy.html"/>
   </url>
   <url>
     <loc>https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/en/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/en/privacy.html"/>
-    <priority>0.3</priority>
+    <lastmod>2026-08-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar-EG" href="https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en-EG" href="https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://eng-mohamed-elsayedahmed.github.io/orabi-accounting/privacy.html"/>
   </url>
 </urlset>
