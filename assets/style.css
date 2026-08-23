@@ -27,7 +27,7 @@
   --radius:14px;
   --radius-lg:22px;
   --display:"Amiri","Times New Roman",serif;
-  --body:"IBM Plex Sans Arabic",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --body:system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;
   --maxw:1180px;
   --pad:clamp(1.15rem,4vw,2.5rem);
   --ease:cubic-bezier(.22,.61,.36,1);
@@ -431,7 +431,7 @@ a.c-v:hover{color:var(--gold)}
 .ftr a{color:var(--on-dark-2);text-decoration:none}
 .ftr a:hover{color:var(--gold-2)}
 .ftr-note{font-size:.78rem;opacity:.62;margin-block-start:1.4rem;max-inline-size:74ch;line-height:1.7}
-.ftr-meta{display:flex;flex-wrap:wrap;align-items:center;gap:.45rem 1rem;margin-block-start:1.2rem;padding-block-start:1rem;border-block-start:1px solid color-mix(in srgb,var(--on-dark) 14%,transparent);font-size:.78rem}
+.ftr-meta{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.45rem 1rem;width:100%;margin-block-start:1.2rem;padding-block-start:1rem;border-block-start:1px solid color-mix(in srgb,var(--on-dark) 14%,transparent);font-size:.78rem}
 .ftr-meta a{color:var(--gold-2);font-weight:600}
 .ftr-meta .sep{opacity:.4}
 
@@ -456,6 +456,18 @@ a.c-v:hover{color:var(--gold)}
 .fab:hover{transform:translateY(-3px);background:#1EBE5D}
 .fab .wa-icon{inline-size:20px;block-size:20px;flex:none}
 .fab-txt{display:inline}
+
+/* ---------- back to top ---------- */
+.back-to-top{
+  position:fixed;inset-block-end:20px;inset-inline-end:84px;z-index:70;
+  display:inline-flex;align-items:center;justify-content:center;
+  inline-size:44px;block-size:44px;border:1px solid color-mix(in srgb,var(--gold) 55%,transparent);
+  border-radius:50%;background:var(--surface);color:var(--gold);text-decoration:none;
+  box-shadow:0 10px 30px -12px rgba(0,0,0,.55);
+  transition:transform .22s var(--ease),background .2s,color .2s;
+}
+.back-to-top:hover{transform:translateY(-3px);background:var(--gold);color:#1A1204}
+.back-to-top svg{inline-size:18px;block-size:18px}
 
 /* ---------- reveal ---------- */
 .js .reveal{opacity:0;transform:translateY(20px)}
@@ -500,7 +512,7 @@ a.c-v:hover{color:var(--gold)}
   .brand-logo-shell{inline-size:40px;block-size:40px;border-radius:9px}
   .brand-name{font-size:.98rem}
   .brand-sub{display:none}
-  .menu-btn{display:block;margin-inline-start:auto}
+  .menu-btn{display:grid;place-items:center;inline-size:44px;block-size:44px;margin-inline-start:auto;padding:0}
   .hdr-act .btn{display:none}
   .nav{
     position:absolute;inset-block-start:68px;inset-inline:0;flex-direction:column;gap:0;
@@ -511,6 +523,8 @@ a.c-v:hover{color:var(--gold)}
   .hdr.is-open .nav{clip-path:inset(0 0 0 0)}
   .hdr.is-open{background:var(--surface);--hd-fg:var(--ink);border-block-end-color:var(--line)}
   .nav a{padding:.7rem .2rem;border-block-end:1px solid var(--line-soft);border-radius:0;font-size:1rem;color:var(--ink)}
+  .ftr-meta{justify-content:flex-start}
+  .back-to-top{inset-inline-end:78px;inset-block-end:18px}
   .doc-cols{columns:1}
   .fab-txt{display:none}
   .fab{padding:.85rem}

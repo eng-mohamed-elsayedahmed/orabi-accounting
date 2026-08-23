@@ -1,6 +1,7 @@
 (function () {
   var each = function (list, fn) { Array.prototype.forEach.call(list, fn); };
   var headers = document.querySelectorAll('.hdr');
+  var topButton = document.querySelector('.back-to-top');
 
   /* external actions: keep the site open and encode prefilled WhatsApp text safely */
   each(document.querySelectorAll('a[href^="https://wa.me/"], a.mcard[href^="http"]'), function (a) {
@@ -29,12 +30,14 @@
     window.requestAnimationFrame(function () {
       var stuck = window.scrollY > 12;
       each(headers, function (h) { h.classList.toggle('is-stuck', stuck); });
+      if (topButton) topButton.hidden = window.scrollY < 520;
       scrollQueued = false;
     });
   }
   function setInitialHeaderState() {
     var stuck = window.scrollY > 12;
     each(headers, function (h) { h.classList.toggle('is-stuck', stuck); });
+    if (topButton) topButton.hidden = window.scrollY < 520;
   }
   setInitialHeaderState();
   window.addEventListener('scroll', onScroll, { passive: true });
@@ -46,6 +49,7 @@
     mb.addEventListener('click', function () {
       var open = hdr.classList.toggle('is-open');
       mb.setAttribute('aria-expanded', open ? 'true' : 'false');
+      mb.setAttribute('aria-label', open ? (document.documentElement.dir === 'rtl' ? 'إغلاق قائمة التنقل' : 'Close navigation menu') : (document.documentElement.dir === 'rtl' ? 'فتح قائمة التنقل' : 'Open navigation menu'));
     });
     each(hdr.querySelectorAll('.nav a'), function (a) {
       a.addEventListener('click', function () {
