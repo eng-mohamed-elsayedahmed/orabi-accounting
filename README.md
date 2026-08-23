@@ -37,7 +37,7 @@ python build-preview.py
 
 ## الملكية والهوية
 
-- التصميم والتطوير: **Mohamed Alsayed** — [GitHub](https://github.com/eng-mohamed-elsayedahmed).
+- التصميم والتطوير: **Mohamed Elsayed** — [Portfolio](https://eng-mohamed-elsayedahmed.github.io/portfolio/).
 
 - **الخطوط:** Amiri للعناوين (مبني على حروف المطبعة الأميرية ببولاق) + IBM Plex Sans Arabic للنص.
 - **الألوان:** كحلي وأزرق وذهبي، متوافقة مع شعار مجموعة عرابي المحاسبية.
