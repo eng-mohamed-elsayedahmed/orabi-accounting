@@ -57,6 +57,9 @@
       a.addEventListener('click', function () {
         hdr.classList.remove('is-open');
         mb.setAttribute('aria-expanded', 'false');
+        var rtl = document.documentElement.dir === 'rtl';
+        mb.setAttribute('aria-label', rtl ? 'فتح قائمة التنقل' : 'Open navigation menu');
+        mb.setAttribute('data-label', rtl ? 'القائمة' : 'Menu');
       });
     });
   });
