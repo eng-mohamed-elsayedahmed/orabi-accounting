@@ -461,6 +461,22 @@ a.c-v:hover{color:var(--gold)}
 .js .reveal{opacity:0;transform:translateY(20px)}
 .js .reveal.in{opacity:1;transform:none;transition:opacity .7s var(--ease), transform .7s var(--ease)}
 
+/* ---------- indexable service pages ---------- */
+.service-hero{padding-block:clamp(4rem,10vw,7rem);background:var(--hero);color:var(--on-dark)}
+.breadcrumbs{display:flex;align-items:center;gap:.55rem;margin-block-end:1.5rem;color:var(--on-dark-2);font-size:.9rem}
+.breadcrumbs a{color:var(--gold-2);text-decoration:none}
+.breadcrumbs a:hover{text-decoration:underline}
+.service-hero .eyebrow{color:var(--gold-2)}
+.service-hero .h2{max-inline-size:18ch;color:var(--on-dark)}
+.service-hero .lede{max-inline-size:68ch;color:var(--on-dark-2)}
+.service-hero .btn-line{border-color:var(--gold-2);color:var(--on-dark)}
+.service-intro{max-inline-size:72ch}
+.service-list{display:grid;gap:.7rem;margin:1.2rem 0 0;padding:0;list-style:none}
+.service-list li{position:relative;padding-inline-start:1.35rem;color:var(--ink-2)}
+.service-list li::before{content:"";position:absolute;inset-inline-start:0;inset-block-start:.65em;width:.45rem;height:.45rem;border-radius:50%;background:var(--gold)}
+.service-note{margin-block-start:2rem;padding:1rem 1.2rem;border-inline-start:3px solid var(--gold);background:var(--surface-2);color:var(--ink-2)}
+.service-cta{margin-block-start:2rem;display:flex;flex-wrap:wrap;gap:.8rem}
+
 @media (prefers-reduced-motion: reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.001ms !important;animation-delay:0s !important;transition-duration:.001ms !important}

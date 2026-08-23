@@ -13,7 +13,7 @@
 | `privacy.html` / `en/privacy.html` | صفحتا سياسة الخصوصية بالعربية والإنجليزية |
 | `build-preview.py` | بيبني `preview.html`: ملف واحد مكتفي بذاته فيه اللغتين والخطوط مدمجة — للمعاينة والمشاركة فقط |
 | `fonts-inline.css` | خطوط Amiri وIBM Plex Sans Arabic كـ base64، بيستخدمها سكريبت المعاينة بس |
-| `robots.txt` / `sitemap.xml` | جاهزين، محتاجين تعديل الدومين |
+| `robots.txt` / `sitemap.xml` | جاهزين ومضبوطين على الدومين الرسمي |
 
 ## التشغيل محليًا
 
